@@ -2,24 +2,25 @@ const pug = require("pug");
 const fs = require("fs");
 const JSZip = require("jszip");
 const axios = require("axios");
-const path  = require("path");
+
 const Wattpad = require("./wattpad");
 
 class Generator {
 
 	static availableFormats = ["epub", "html"];
+
 	static templates = {
-		mimetype: fs.readFileSync(path.join(process.cwd(), "templates/epub/mimetype")),
-		container: fs.readFileSync(path.join(process.cwd(), "templates/epub/META-INF/container.xml")),
-		metadata: fs.readFileSync(path.join(process.cwd(), "templates/epub/META-INF/metadata.xml.pug")),
-		mainCSS: fs.readFileSync(path.join(process.cwd(), "templates/epub/OPS/css/main.css")),
-		titleCSS: fs.readFileSync(path.join(process.cwd(), "templates/epub/OPS/css/title.css")),
-		cover: fs.readFileSync(path.join(process.cwd(), "templates/epub/OPS/cover.xhtml")),
-		contentOPF: fs.readFileSync(path.join(process.cwd(), "templates/epub/OPS/content.opf.pug")),
-		titleFile: fs.readFileSync(path.join(process.cwd(), "templates/epub/OPS/title.xhtml.pug")),
-		toc: fs.readFileSync(path.join(process.cwd(), "templates/epub/OPS/toc.ncx.pug")),
-		chapter: fs.readFileSync(path.join(process.cwd(), "templates/epub/OPS/chapter.xhtml.pug")),
-		htmlv2: fs.readFileSync(path.join(process.cwd(), "templates/htmlv2.pug"))
+		mimetype: fs.readFileSync("./templates/epub/mimetype").toString(),
+		container: fs.readFileSync("./templates/epub/META-INF/container.xml").toString(),
+		metadata: fs.readFileSync("./templates/epub/META-INF/metadata.xml.pug").toString(),
+		mainCSS: fs.readFileSync("./templates/epub/OPS/css/main.css").toString(),
+		titleCSS: fs.readFileSync("./templates/epub/OPS/css/title.css").toString(),
+		cover: fs.readFileSync("./templates/epub/OPS/cover.xhtml").toString(),
+		contentOPF: fs.readFileSync("./templates/epub/OPS/content.opf.pug").toString(),
+		titleFile: fs.readFileSync("./templates/epub/OPS/title.xhtml.pug").toString(),
+		toc: fs.readFileSync("./templates/epub/OPS/toc.ncx.pug").toString(),
+		chapter: fs.readFileSync("./templates/epub/OPS/chapter.xhtml.pug").toString(),
+		htmlv2: fs.readFileSync("./templates/htmlv2.pug").toString()
 	}
 
 	/**
