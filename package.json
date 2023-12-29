@@ -4,6 +4,9 @@
   "private": true,
   "description": "A website to download wattpad stories",
   "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "axios": "^0.21.2",
     "dotenv": "^8.2.0",
