@@ -38,5 +38,5 @@ app.use("/api", api);
 app.use(frontend);
 
 app.listen(process.env.PORT || 2200, () => {
-	console.info("App started on 2200");
+	console.log('Listening to PORT:', PORT)
 });
