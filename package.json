@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "private": true,
   "description": "A website to download wattpad stories",
-  "main": "main.js",
+  "main": "index.js",
   "dependencies": {
     "axios": "^0.21.2",
     "dotenv": "^8.2.0",
@@ -17,7 +17,7 @@
     "sanitize-html": "^2.4.0"
   },
   "scripts": {
-    "start": "node main.js"
+    "start": "node index.js"
   },
   "author": "",
   "homepage": "https://wattpad.ml",
