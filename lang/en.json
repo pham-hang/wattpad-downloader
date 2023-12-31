@@ -7,14 +7,14 @@
 	},
 	"home": {
 		"text": "Download Wattpad stories for<br/> e-book readers, smartphones, desktop and more!",
-		"urlDescription": "Open a story on wattpad and change the <b>.com</b> to <b>.ml</b>",
+		"urlDescription": "Open a story on wattpad and copy the book URL",
 		"placeholder": "Enter URL to book, part or id",
 		"submit": "Next"
 	},
 	"help": [
 		{
 			"title": "How to download a story from Wattpad?",
-			"text": "You can open the story that you want to download on Wattpad.com and simply change the <b>.com</b> of wattpad.com in the URL to <b>.ml</b>.<br/>Or you copy the URL of the book and paste it into the input field on our page."
+			"text": "You can open the story that you want to download on Wattpad.com and copy the URL of the book and paste it into the input field on our page."
 		},
 		{
 			"title": "Which format should I choose for download?",

@@ -37,6 +37,7 @@ const frontend = require("./routes/frontend");
 app.use("/api", api);
 app.use(frontend);
 
-app.listen(process.env.PORT || 2200, () => {
-	console.info("App started on 2200");
+const port = process.env.PORT || 2200
+app.listen(port, () => {
+	console.info("App started on port", port);
 });
